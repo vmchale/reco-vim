@@ -1,2 +1,3 @@
 syntax_checkers/go/reco.vim
 doc/reco-vim.txt
+plugin/reco.vim

@@ -2,3 +2,4 @@ language: python
 install: pip install vim-vint
 script:
     - vint syntax_checkers/go/reco.vim
+    - vint plugin/reco.vim

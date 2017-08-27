@@ -22,15 +22,23 @@ I use this plugin alongside [vim-go](https://github.com/fatih/vim-go).
 
 ## Configuration
 
-Add the following to your `.vimrc` to make reco automatically check go
-files:
+To check a file using `reco`:
+
+```vim
+:RecoCheck
+```
+
+I have the following in my `.vimrc` to map this to an easy keybinding:
+
+```vim
+au BufRead,BufNewFile *.go nnoremap rc <Plug>RecoCheck
+```
+
+You can tell Syntastic to check `.go` files automatically with:
 
 ```vim
 let g:syntastic_go_checkers = [ 'reco' ]
 ```
 
-If you'd rather call `reco` as a checker manually:
-
-```vim
-:RecoCheck
-```
+Note however that this will give you potentially unwanted errors in other
+projects.
