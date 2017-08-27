@@ -16,15 +16,25 @@ CONTENTS                                               *RecoContents*
 =====================================================================
 Section 1: Usage                                          *RecoUsage*
 
-By default, reco-vim integrates with Syntastic, and does not expose
-any functions to the user.
+By default, reco-vim integrates with Syntastic, but there is an
+exposed command as well.
+
+:RecoCheck                                               *:RecoCheck*
+    Check the current file using reco.
+
+<Plug>RecoCheck
+    Check the current file. You can assign a keybinding to this in
+    your .vimrc with something like this >
+        nnoremap rc <Plug>RecoCheck
+<
 
 =====================================================================
 Section 2: Config                                        *RecoConfig*
 
 ---------------------------------------------------------------------
 
-To enable reco, add something like the following to your .vimrc >
+To configure reco as a syntax checker for go files, add something
+like the following to your .vimrc >
     let g:syntastic_go_checkers = [ 'reco' ]
 <
 

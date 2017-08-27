@@ -32,5 +32,5 @@ let g:syntastic_go_checkers = [ 'reco' ]
 If you'd rather call `reco` as a checker manually:
 
 ```vim
-:SyntasticCheck reco
+:RecoCheck
 ```
