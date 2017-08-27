@@ -4,4 +4,4 @@ endif
 let g:__RECO_VIM__ = 1
 
 command! RecoCheck SyntasticCheck reco
-map <silent> <Plug>RecoCheck :RecoCheck<CR>
+map <Plug>RecoCheck :RecoCheck<CR>

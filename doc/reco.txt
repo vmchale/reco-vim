@@ -35,7 +35,7 @@ Section 2: Config                                        *RecoConfig*
 
 To configure reco as a syntax checker for go files, add something
 like the following to your .vimrc >
-    let g:syntastic_go_checkers = [ 'reco' ]
+    au BufRead,BufNewFile *.go nnoremap rc <Plug>RecoCheck
 <
 
 =====================================================================
