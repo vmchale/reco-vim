@@ -1,4 +1,4 @@
-*reco-vim* Vim syntastic integration for 'reco'
+*reco* Vim syntastic integration for 'reco'
 
                               o
  ,_    _   __   __                _  _  _
