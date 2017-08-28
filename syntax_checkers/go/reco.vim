@@ -25,7 +25,7 @@ function! SyntaxCheckers_go_reco_GetLocList() dict
                 \ 'args': 'check',
                 \ 'fname': shellescape(expand('%'))})
 
-    " currently a bit broken.
+    " currently should work
     let errorformat =
                 \ '%E%\e%\eerror[%t%n]%\e:%m%\e,' .
                 \ '%Z,' .
