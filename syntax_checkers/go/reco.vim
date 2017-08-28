@@ -31,8 +31,7 @@ function! SyntaxCheckers_go_reco_GetLocList() dict
                 \ '%Z,' .
                 \ '%E%serror[%t%n]%\e:%m%\e,' .
                 \ '%C%s    --> %\e%f:%l:%c,' .
-                \ '%Z,' .
-                \ '(unknown position):%m,'
+                \ '%Z,'
     let loclist = SyntasticMake({
             \ 'makeprg': makeprg,
             \ 'errorformat': errorformat,
