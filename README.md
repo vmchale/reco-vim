@@ -9,6 +9,8 @@ This is meant to provide a layer on top of
 Currently, it just adds `reco` as a syntax checker usable with
 [syntastic](https://github.com/vim-syntastic/syntastic).
 
+![reco-vim catching an error and giving location information](https://raw.githubusercontent.com/vmchale/reco-vim/master/reco-vim.png)
+
 ## Installation
 
 Using [vim-plug](https://github.com/junegunn/vim-plug):
