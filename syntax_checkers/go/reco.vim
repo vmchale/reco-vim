@@ -3,6 +3,7 @@ if exists('g:loaded_syntastic_go_reco_checker')
 endif
 let g:loaded_syntastic_go_reco_checker = 1
 
+" TODO lint with this: GOPATH=$(pwd):/home/vanessa/work/go/reco-sdaccel/go-teak reco-check -- main.go
 let g:syntastic_go_reco_exec = 'reco'
 
 function! StripANSI(errors) abort " {{{2
@@ -31,6 +32,8 @@ function! SyntaxCheckers_go_reco_GetLocList() dict
                 \ '%Z,' .
                 \ '%E%serror[%t%n]%\e:%m%\e,' .
                 \ '%C%s    --> %\e%f:%l:%c,' .
+                \ '%Z,' .
+                \ '%Eerror in invoking goblin on file panic: %f:%l:%c:%m,' .
                 \ '%Z,'
     let loclist = SyntasticMake({
             \ 'makeprg': makeprg,
